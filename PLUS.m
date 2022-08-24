@@ -1,5 +1,5 @@
-function y = PLUS
+function y = PLUS(x)
 
-    y = 1+2;
+    y = 1+x;
 
 end
