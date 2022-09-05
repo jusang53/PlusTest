@@ -1,22 +1,27 @@
 classdef Plusscript < matlab.unittest.TestCase
-    methods(Test, TestTags = {Test1})
+    methods(Test, TestTags={'Setting'})
+        function Test0(testCase)
+            actSolution = SetNumber();
+            expSolution = 1;
+            testCase.verifyEqual(actSolution,expSolution)
+        end
+    end
+    methods(Test, TestTags={'Plus'})
         function Test1(testCase)
-            actSolution = PLUS(1);
-            expSolution = 3;
+            actSolution = PLUS();
+            expSolution = 30;
             testCase.verifyEqual(actSolution,expSolution)
         end
     end
-    methods(Test, TestTags = {Test2})
+    methods(Test, TestTags={'Minus'})
         function Test2(testCase)
-            actSolution = PLUS(2);
-            expSolution = 3;
+            actSolution = MINUS();
+            expSolution = -10;
             testCase.verifyEqual(actSolution,expSolution)
         end
-    end
-    methods(Test, TestTags = {Test3})
         function Test3(testCase)
-            actSolution = PLUS(3);
-            expSolution = 3;
+            actSolution = MINUS();
+            expSolution = 10;
             testCase.verifyEqual(actSolution,expSolution)
         end
     end
