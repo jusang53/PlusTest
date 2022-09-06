@@ -1,5 +1,5 @@
 classdef Plusscript < matlab.unittest.TestCase
-    methods(Test, TestTags={'Setting'})
+    methods(Test, TestTags={'A_Setting'})
         function Test0(testCase)
             actSolution = SetNumber();
             expSolution = 1;
